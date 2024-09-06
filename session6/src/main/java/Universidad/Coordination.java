@@ -14,13 +14,36 @@ public class Coordination {
 	public Coordination(){
 	}
 
+	/**
+	 *
+	 * @param code
+	 * @param name
+	 */
 	public Coordination (int code, String name){
 		this.code = code;
 		this.name = name;
 	}
-	/**
-	 * 
-	 * @param code
-	 * @param name
-	 */
+
+	public int getCode() {
+		return code;
+	}
+
+	public void setCode(int code) {
+		this.code = code;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	@Override
+	public String toString() {
+		return "\ncode = " + code +
+				", name = '" + name + '\'' +
+				"}";
+	}
 }//end Coordination
